@@ -4,14 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <script src="https://kit.fontawesome.com/bfb4213bb3.js" crossorigin="anonymous"></script> -->
-      <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" />
-       Load font awesome icons
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
+      <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" />
+      <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
-    Hi Ramaniiiiiiiiiiiiiiiiiiiiiiii Sample vercel
-    <button class="btn">button.........</button>
+    <div id="header">
+            <nav>
+                <span class="logo"><span style="color: #ff004f;font-size:60px;font-weight: 600;">R</span>amani V</span>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="images">
+                <img class="desktop-img" src="assets/images/desk.jpg">
+                <img class="mob-img" src="assets/images/mobile.jpg">
+            <div class="header-text">
+                <h1>Hi, I'm Ramani Vishnu,<br>a <span>UI <span style="color: #fff;"> / </span> FE</span> developer.</h1>
+            </div>
+        </div>
+    </div>
+<!-------------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="sub-title">About me</h1>
+            <div class="about-col">
+                <div class="about-col-1">
+                    <p>Front-end/UI developer with 3+ years of experience, offering impactful web solutions and skilled in developing and testing web-based applications using an array of technologies. 
+                        Having strong interpersonal skills and ability to communicate with different team members to gather and provide information when required, extensive experience in gathering business requirements, designing process and system improvements to increase productivity, and self-motivated with a strong analytical mind alongside the ability to recognize and develop innovative ideas.
+                        Desiring to combine robust technical skills with an intensive background as a front-end developer at a challenging organization. <p>
+                    </div>
+                <div class="about-col-2">
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Technologies</span><br>HTML, SCSS, JS, VueJS, Vuex, React, Redux, Bootstrap</li>
+                            <li><span>Build Tools</span><br>WebPack</li>
+                            <li><span>Design Tools</span><br>Figma,Zeplin</li>
+                            <li><span>Performance Optimization</span><br>CWV</li>
+                            <li><span>Testing</span><br>Cypress,Postman</li>
+                            <li><span>Version Control</span><br>Git,Gitlab(CI/CD)</li>
+                            <li><span>Collaboration Tools</span><br>RingCentral,Teams,Slack</li>
+                            <li><span>Project Management</span><br>Agile Methodology and tools are Jira and confluence</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2022 - Current </span><br>Senior Software Engineer at Valuelabs</li>
+                            <li><span>June 2020 - May 2021</span><br>Software Engineer at Valuelabs</li>
+                            <li><span>Dec 2019 - March 2020</span><br>Intern at Valuelabs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016 - 2020</span><br>B.Tech(IT) from QIS Institute of Technology</li>
+                            <li><span>2015 - 2016</span><br>HSC from St.Dominic's Anglo Indian Higher Secondary School</li>
+                            <li><span>2013 - 2014</span><br>SSLC from St.Dominic's Anglo Indian Higher Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------service------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div id="development">
+                    <i class="fas fa-code"></i>
+                    <h2>Development</h2>
+                    <p>Developed dynamic and browser compatible webpages by collaborating with cross-functional teams (designers, backend
+                        developers, and product owners) to deliver high-quality user interfaces by using agile Methodology
+                </p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Design</h2>
+                    <p>Developed pixel perfect designs using scss and enhanced UI using chrome extensions and dev tools which 
+                        ensured compliance with SEO(CWV) and accessibility
+                        guidelines</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Deploy and Test</h2>
+                    <p>Independently handled deployment across multiple environments
+                        and conducted performance testing and also maintained version control system(Git) and CI/CD process in GitLab.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>This website connects you to the specialised doctors.</h3>
+                        <a href="https://www.vitals.com/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-2.png" alt="work1">
+                    <div class="layer">
+                        <h3>This website connects you to the specialist based on the queries.</h3>
+                        <a href="https://www.webmd.com/ds/ddg-flu"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-3.png" alt="work1">
+                    <div class="layer">
+                        <h3>Personal Project</h3>
+                        <p>This website is my personal project which is a clone of tmdb website.</p>
+                        <a href="https://www.themoviedb.org/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>  
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- ----------------contact---------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>ramanishree2597@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9677217664</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/RamaniVishnu"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/ramanishree2597/"><i class="fab fa-codepen"></i></a>
+                        <a href="https://www.instagram.com/tejashree_ramani/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ramani-vishnu-335916176/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/FED_Ramani_V_Resume.pdf" download="FED-Ramani Resume" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required >
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright  &#169; Ramani Vishnu </p>
+        </div>
+    </div>
+    <script>
+        //about and nav
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents= document.getElementsByClassName("tab-contents");
+        let sidemenu = document.getElementById("sidemenu")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        function openmenu(){
+            console.log("open");
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            console.log("close");
+            sidemenu.style.right = "-200px"
+        }
+
+        // form script
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Fm7ZLuYAzoG0JEVV9vs4xq9_lXijJyw3a51pk0VtOJ0NeMKzNQ_GyihDgg4F8jY4/exec'
+  const form = document.forms['submit-to-google-sheet'];
+  const successMSG = document.getElementById("msg"); 
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        successMSG.innerHTML = "Message sent successully";
+        setTimeout(()=>successMSG.innerHTML="",5000);
+        form.reset();
+      })
+      .catch(error => {
+        successMSG.innerHTML = "Message not sent. Kindly try later";
+        setTimeout(()=>successMSG.innerHTML="",5000);}
+        )
+  })
+    </script>
 </body>
 </html>
